@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> <!-- define o padrão de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- deixa responsivo no celular -->
+    <title>Editar Endereço</title> <!-- título da aba -->
+    <link rel="stylesheet" href="../css/editarEndereco.css"> <!-- link do css dessa página -->
+    <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" /> <!-- ícone da aba -->
+
+</head>
+
+<body>
+    <div class="container"> <!-- container principal da página -->
+        <div class="form-box"> <!-- caixa do formulário -->
+            <h2>EDITAR ENDEREÇO</h2> <!-- título da seção -->
+
+            <form action="#" method="post"> <!-- formulário para editar endereço -->
+                <label for="rua">Rua: <span class="obrigatorio">*</span></label> <!-- label rua -->
+                <input type="text" id="rua" name="rua" placeholder="Digite o nome da rua" required> <!-- input rua -->
+
+                <div class="linha-dupla"> <!-- linha com dois campos lado a lado -->
+                    <div>
+                        <label for="bairro">Bairro: <span class="obrigatorio">*</span></label> <!-- label bairro -->
+                        <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required> <!-- input bairro -->
+                    </div>
+                    <div>
+                        <label for="cep">CEP: <span class="obrigatorio">*</span></label> <!-- label cep -->
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" required> <!-- input cep -->
+                    </div>
+                </div>
+
+                <div class="linha-dupla"> <!-- segunda linha dupla -->
+                    <div>
+                        <label for="numero">Número: <span class="obrigatorio">*</span></label> <!-- label número -->
+                        <input type="text" id="numero" name="numero" placeholder="Número" required> <!-- input número -->
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade: <span class="obrigatorio">*</span></label> <!-- label cidade -->
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade" required> <!-- input cidade -->
+                    </div>
+                </div>
+
+                <label for="complemento">Complemento:</label> <!-- label complemento -->
+                <input type="text" id="complemento" name="complemento" placeholder="Apartamento, bloco, etc."> <!-- input complemento -->
+
+                <label for="estado">Estado: <span class="obrigatorio">*</span></label> <!-- label estado -->
+                <select id="estado" name="estado" required> <!-- select estado -->
+                    <option value="">Selecione o estado</option> <!-- opção placeholder -->
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                    <option value="RS">RS</option>
+                    <option value="BA">BA</option>
+                    <option value="PR">PR</option>
+                </select>
+
+                <label for="pais">País: <span class="obrigatorio">*</span></label> <!-- label país -->
+                <input type="text" id="pais" name="pais" placeholder="Digite o país" required> <!-- input país -->
+
+                <div class="botoes"> <!-- div para organizar botões -->
+                    <button type="submit" class="btn-salvar">SALVAR ENDEREÇO</button> <!-- botão salvar -->
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reobote</title>
+
+  <!-- Fonte e ícone -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/estilos.css" />
+  <link rel="icon" type="image/png" href="./img/Logo_Reobote.png" />
+</head>
+
+<body>
+  <!-- ====== CABEÇALHO ====== -->
+  <header class="header">
+    <div class="container header-inner">
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="#"><img src="./img/logo_header_reobote-removebg-preview.png" alt="Logo Reobote"></a>
+      </div>
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="nav-menu">
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#quem-somos" class="nav-link">Quem somos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- BOTÕES DE LOGIN/CADASTRO (visíveis quando não logado) -->
+      <div class="nav-buttons">
+        <a href="./pages/login.html" class="btn btn-login">Login</a>
+        <a href="./pages/cadastro.html" class="btn btn-outline">Cadastrar-se</a>
+      </div>
+
+      <!-- ÍCONE DE PERFIL (aparece quando logado) -->
+      <div class="user-circle" style="display: none;">
+        <a href="./pages/perfil.html">
+          <img src="./img/perfil.png" alt="Imagem de Perfil" class="profile-img">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== SEÇÃO DE CARROSSEL ====== -->
+  <section class="carrossel" aria-label="Banner principal">
+    <div class="slides-wrapper">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="./img/FotoRevestimento.webp" alt="Usinagem 1">
+        <div class="hero-content">
+          <h1>Excelência em Usinagem e Manutenção</h1>
+          <p>Precisão, qualidade e confiança em cada projeto.</p>
+          <a class="btn btn-cta" href="./pages/login.html">Solicite um orçamento</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="./img/fotoRetifica.webp" alt="Usinagem 2">
+        <div class="hero-content">
+          <h1>Excelência em Usinagem e Manutenção</h1>
+          <p>Precisão, qualidade e confiança em cada projeto.</p>
+          <a class="btn btn-cta" href="./pages/login.html">Solicite um orçamento</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="./img/fotoFundo.webp" alt="Usinagem 3">
+        <div class="hero-content">
+          <h1>Excelência em Usinagem e Manutenção</h1>
+          <p>Precisão, qualidade e confiança em cada projeto.</p>
+          <a class="btn btn-cta" href="./pages/login.html">Solicite um orçamento</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="prev" aria-label="Anterior">❮</button>
+    <button class="next" aria-label="Próximo">❯</button>
+
+    <div class="dots" role="tablist">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ====== CONTADORES ====== -->
+  <section class="features" id="contadores">
+    <div class="container features-inner">
+      <div class="counter-box">
+        <span class="counter" data-target="250">0</span>
+        <p>Clientes</p>
+      </div>
+
+      <div class="counter-box">
+        <span class="counter" data-target="98" data-is-percent="true">0</span>
+        <p>Satisfação</p>
+      </div>
+
+      <div class="counter-box">
+        <span class="counter" data-target="500" data-plus="true">0</span>
+        <p>Serviços prestados</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVIÇOS ====== -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <h2 class="section-title">Serviços</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-media">
+            <img src="./img/usinagem_de_cilindro.webp" alt="Usinagem de Cilindro">
+          </div>
+          <div class="service-body">
+            <h4>Usinagem de Cilindro</h4>
+            <p>Desgaste mecânico para dar forma e acabamento a peças cilíndricas, internas ou externas.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-media">
+            <img src="./img/retifica_cilindro_borracha.webp" alt="Retífica de Borracha">
+          </div>
+          <div class="service-body">
+            <h4>Retífica de Borracha</h4>
+            <p>Corrige imperfeições e restaura dimensões de cilindros emborrachados.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-media">
+            <img src="./img/revestimento_borracha.webp" alt="Revestimento de Borracha">
+          </div>
+          <div class="service-body">
+            <h4>Revestimento de Borracha</h4>
+            <p>Aplicação de borracha natural ou sintética sobre superfícies e equipamentos.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== QUEM SOMOS ====== -->
+  <section id="quem-somos" class="about-section">
+    <div class="container">
+      <h2 class="section-title">Quem Somos</h2>
+      <div class="about-content">
+        <div class="about-items">
+          <div class="about-item">
+            <i class="fas fa-users"></i>
+            <div><h3>Equipe Dedicada</h3><p>Profissionais experientes e comprometidos com qualidade.</p></div>
+          </div>
+
+          <div class="about-item">
+            <i class="fas fa-cogs"></i>
+            <div><h3>Inovação Constante</h3><p>Processos modernos em usinagem, retífica e revestimento.</p></div>
+          </div>
+
+          <div class="about-item">
+            <i class="fas fa-handshake"></i>
+            <div><h3>Compromisso com o Cliente</h3><p>Atendimento ágil, transparente e resultados precisos.</p></div>
+          </div>
+
+          <div class="about-item">
+            <i class="fas fa-bullseye"></i>
+            <div><h3>Missão</h3><p>Entregar soluções com excelência e qualidade.</p></div>
+          </div>
+
+          <div class="about-item">
+            <i class="fas fa-eye"></i>
+            <div><h3>Visão</h3><p>Ser referência em inovação e qualidade no setor metalúrgico.</p></div>
+          </div>
+
+          <div class="about-item">
+            <i class="fas fa-heart"></i>
+            <div><h3>Valores</h3><p>Transparência, ética e melhoria contínua.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTATO ====== -->
+  <section class="contact" id="contato">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <h2 class="contact-title">Contato</h2>
+        <p><strong>Endereço:</strong> R. João Benedetto Capitani, 124</p>
+        <p><strong>Telefone:</strong> (15) 98800-5903</p>
+        <p><strong>Email:</strong> vendas@reoboteusinagem.com.br</p>
+
+        <div class="contact-actions">
+          <a class="btn btn-outline" href="tel:+5515988005903">Ligar</a>
+          <a class="btn btn-login" href="https://wa.me/5515988005903" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps?q=R.%20Jo%C3%A3o%20Benedetto%20Capitani%20124&output=embed"
+                width="100%" height="420" style="border:0; border-radius:18px;"
+                allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== RODAPÉ ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Reobote</div>
+      <div>Desenvolvido por MKtech</div>
+    </div>
+  </footer>
+
+  <!-- ====== SCRIPT PRINCIPAL ====== -->
+  <script src="./script/index.js"></script>
+</body>
+</html>

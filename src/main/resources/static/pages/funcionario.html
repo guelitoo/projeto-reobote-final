@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel do Funcionário - Reobote</title>
+  <link rel="stylesheet" href="../css/funcionario.css" />
+  <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">
+      <a href="indexFuncionario.html">
+        <img src="../img/Logo_Reobote.png" alt="Logo Reobote" />
+      </a>
+    </div>
+
+    <div class="user-icon">
+      <a href="perfil.html">
+        <img src="../img/perfil.png" alt="Usuário" />
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main class="main-container">
+    <h1>ORÇAMENTOS</h1>
+
+    <!-- Lista de pedidos (preenchida via JS) -->
+    <section id="pedidosContainer" class="pedidos-container"></section>
+
+    <!-- ===== BOTÃO HISTÓRICO DE PEDIDOS ===== -->
+    <div class="historico-btn-container">
+      <a href="./historico.html" class="btn-historico">
+        Histórico de Pedidos
+      </a>
+    </div>
+  </main>
+
+  <script src="../script/scriptFuncionario.js"></script>
+</body>
+</html>

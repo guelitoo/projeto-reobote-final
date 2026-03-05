@@ -1,0 +1,135 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #d9d9d9, #f7f7f7);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER MENOR ===== */
+header {
+  width: 100%;
+  background: white;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  position: relative; /* NECESSÁRIO */
+}
+
+header img {
+  height: 48px;
+}
+
+header .icon-user {
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ===== TÍTULO ===== */
+header .titulo-header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* ===== GRID DOS PEDIDOS ===== */
+.pedidos-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 25px;
+}
+
+/* ===== CARD DO PEDIDO ===== */
+.pedido-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.pedido-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== INFORMAÇÕES ===== */
+.pedido-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.pedido-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.pedido-card strong {
+  color: #222;
+}
+
+/* ===== IMAGEM DO PEDIDO ===== */
+.imagem-pedido {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.imagem-pedido img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== STATUS ===== */
+.status {
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+}
+
+/* CORES DOS STATUS */
+.status.a-fazer { background: #ff7043; }       /* laranja */
+.status.andamento { background: #1976d2; }    /* azul */
+.status.pronto { background: #43a047; }       /* verde */
+.status.cancelado { background: #d32f2f; }    /* vermelho */
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  header img {
+    height: 38px;
+  }
+
+  h2.titulo {
+    font-size: 1.6rem;
+  }
+
+  .pedido-card {
+    padding: 18px;
+  }
+}

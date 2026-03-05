@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Define o tipo de documento e o idioma da página -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Garante que o texto use o padrão UTF-8 (acentos e caracteres especiais corretos) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Faz o layout se adaptar a dispositivos móveis (responsividade) -->
+
+  <title>Perfil - Reobote</title>
+  <!-- Título exibido na aba do navegador -->
+
+  <link rel="stylesheet" href="../css/perfil.css">
+  <!-- Importa o arquivo CSS com o estilo da página de perfil -->
+
+  <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" />
+  <!-- Define o ícone que aparece na aba do navegador -->
+</head>
+
+<body>
+
+	<!-- ====== CABEÇALHO ====== -->
+	<header class="header">
+	  <div class="container">
+	    <div class="logo-section">
+	      <!-- A logo volta para o index principal -->
+	      <a href="../index.html" id="logoHome">
+	        <img src="../img/Logo_Reobote.png" alt="Reobote" class="logo-img">
+	      </a>
+	    </div>
+
+	    <button id="logoutBtn" class="btn-logout">Logout</button>
+	  </div>
+	</header>
+
+
+  <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+  <main class="profile-container">
+    <div class="profile-card">
+      <h2 class="profile-title">PERFIL</h2>
+      <!-- Título principal da seção de perfil -->
+
+	  <button id="btnMeusPedidos" class="btn-pedidos" style="display:none;">
+	    Ver meus pedidos
+	  </button>
+
+	  
+      <!-- Formulário que exibe e permite editar os dados do usuário -->
+      <form id="usuarioLogado" class="profile-form">
+        
+        <!-- Campo: Nome do usuário (somente leitura) -->
+        <label>Nome:</label>
+        <input id="nome" type="text" readonly>
+
+        <!-- Campo: E-mail com ícone de edição -->
+        <label>Email:</label>
+        <div class="input-wrapper">
+          <input id="email" type="email" readonly>
+          <!-- Ícone ✎ que permite ativar a edição do campo -->
+          <span class="edit-icon" data-edit="email"></span>
+        </div>
+
+        <!-- Campo: Telefone com ícone de edição -->
+        <label>Telefone:</label>
+        <div class="input-wrapper">
+          <input id="telefone" type="text" readonly>
+          <span class="edit-icon" data-edit="telefone"></span>
+        </div>
+
+        <!-- Campo: CPF ou CNPJ do usuário -->
+        <label>CPF/CNPJ:</label>
+        <input id="cpfCnpj" type="text" readonly>
+
+        <!-- Campo: Senha com ícone de edição -->
+		<label>Senha:</label>
+		<div class="input-wrapper">
+		  <input id="senha" type="password" readonly>
+		  <span class="toggle-password" id="toggleSenha">Exibir senha️</span>
+		  <span class="edit-icon" data-edit="senha">✎</span>
+		</div>
+
+        <!-- Botão para salvar alterações feitas nos campos -->
+        <button type="submit" class="btn btn-primary">SALVAR ALTERAÇÕES</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- ====== SCRIPT ====== -->
+  <script src="../script/scriptPerfil.js"></script>
+  <!-- Importa o script JavaScript que gerencia o comportamento da página:
+       - Logout
+       - Edição dos campos
+       - Salvamento de dados atualizados -->
+</body>
+
+</html>

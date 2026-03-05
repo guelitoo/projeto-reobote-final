@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Declara que o documento é HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Define o padrão de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o layout se ajustar a diferentes tamanhos de tela -->
+  <title>Login</title> <!-- Define o título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="../css/login.css"> <!-- Importa o arquivo CSS com os estilos da página de login -->
+  <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" /> <!-- Define o ícone (favicon) que aparece na aba -->
+</head>
+
+<body> <!-- Início do corpo da página -->
+
+  <header class="header"> <!-- Cabeçalho da página -->
+    <div class="container"> <!-- Container para organizar o conteúdo -->
+      <!-- Logo -->
+      <div class="logo-section"> <!-- Seção onde fica a logo -->
+        <a href="../index.html"> <!-- Link que leva à página inicial -->
+          <img src="../img/Logo_Reobote.png" alt="Reobote" class="logo-img"> <!-- Imagem da logo -->
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Caixa de login -->
+  <div class="login-container"> <!-- Container principal do formulário de login -->
+    <h2>LOGIN</h2> <!-- Título da seção de login -->
+    
+    <form id="loginForm"> <!-- Início do formulário de login -->
+      <label for="email">E-mail:</label> <!-- Rótulo do campo de e-mail -->
+      <input type="email" id="email" placeholder="Digite seu e-mail" required> <!-- Campo de entrada para o e-mail -->
+
+      <label for="senha">Senha:</label> <!-- Rótulo do campo de senha -->
+      <input type="password" id="senha" placeholder="Digite sua senha" required> <!-- Campo de entrada para a senha -->
+
+      <button type="submit" class="btn-login">ENTRAR</button> <!-- Botão para enviar o formulário -->
+    </form> <!-- Fim do formulário -->
+
+    <div class="signup-link"> <!-- Seção com o link para cadastro -->
+      Não tem conta? <a href="./cadastro.html">Crie uma!</a> <!-- Link para a página de cadastro -->
+    </div>
+  </div>
+
+  <script src="../script/scriptLogin.js"></script> <!-- Importa o arquivo JavaScript que controla o login -->
+
+</body> <!-- Fim do corpo da página -->
+
+</html> <!-- Fim do documento HTML -->
