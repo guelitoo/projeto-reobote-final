@@ -37,10 +37,15 @@ A aplicação simula um sistema real, integrando interface e lógica de funciona
 
 ## 📂 Estrutura do projeto
 📁 projeto-reobote-final
+
 ┣ 📁 assets
+
 ┣ 📁 css
+
 ┣ 📁 js
+
 ┣ 📄 index.html
+
 ┗ 📄 README.md
 
 
